@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+html
+    head
+      meta(charset="UTF-8")
+      title Document
+      link(rel="stylesheet", href="style.css")
+    body
+        h1 欢迎来到nodejs
+        form(action="/uploadImg", method="post", enctype="multipart/form-data")
+          span #{user}的个人信息
+          <br/>
+          span 姓名: 
+          input(type="text", name="name")
+          <br/>
+          span 年龄: 
+          input(type="text", name="age")
+          <br/>
+          input(type='file', name='image', value="上传图片")
+          input(type="submit")
+</html>
