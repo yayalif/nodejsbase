@@ -3,7 +3,7 @@ var url = require('url')
 var querystring = require('require')
 
 exports.init = function (req, res) {
-  _res = req
+  _req = req
   _res = res
 }
 exports.GET = function (key) {

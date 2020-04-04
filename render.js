@@ -1,4 +1,5 @@
-module.exports = function(template, options) {
+var jade = require('jade')
+module.exports = function(res, template, options) {
   var str = require('fs').readFileSync(template, 'utf8')
   // 获取 jade 模板编译处理函数
   var fn = jade.compile(str, {filename: template, pretty: true})
